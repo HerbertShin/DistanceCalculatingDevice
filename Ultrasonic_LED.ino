@@ -28,7 +28,7 @@ lcd.print("Device Ready"); //Prints this message on startup
 pinMode(button,INPUT);
 pinMode(trigPin, OUTPUT);
 pinMode(echoPin, INPUT);
-pinMode(led, OUTPUT);
+pinMode(led1, OUTPUT);
 }
  
 void loop(){
@@ -71,7 +71,7 @@ distance = duration*0.034/2; //Calculates the distance one way
 
 //Method to shutoff led and sensor when the button is not pushed 
 void OFF(){
-  digitalWrite(led, LOW);
+  digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
   digitalWrite(trigPin, LOW);
   digitalWrite(echoPin, LOW);
